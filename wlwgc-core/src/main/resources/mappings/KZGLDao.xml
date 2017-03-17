@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.dao.mapper.KZGLDao">
+
+    <select id="findAll" resultType="KZGL">
+        select  tb1.*,
+                tb2.name     areaname,
+                tb3.username username,
+                tb4.code     cscode,
+                tb4.name     csname
+        from TB_KZGLB tb1
+        left join TB_AREA tb2
+             on tb1.qyid = tb2.id
+        left join TB_USER tb3
+             on tb1.userid = tb3.id
+        left join TB_CSLXB tb4
+             on tb4.id = tb1.cslxid
+    </select>
+
+    <update id="update" parameterType="KZGL">
+        UPDATE TB_KZGLB
+        <set>
+            <if test="  qyid !=null and   qyid !=''">
+                qyid =#{qyid},
+            </if>
+            <if test="cslxid!=null and cslxid!=''">
+                cslxid=#{cslxid},
+            </if>
+            <if test="first!=null and first!=''">
+                first=#{first},
+            </if>
+            <if test="last!=null and last!=''">
+                last=#{last},
+            </if>
+            <if test="createtime!=null and createtime!=''">
+                createtime=#{createtime},
+            </if>
+            <if test="userid!=null and userid!=''">
+                userid=#{userid},
+            </if>
+            <if test="otherone!=null and otherone!=''">
+                otherone=#{otherone},
+            </if>
+            <if test="othertwo!=null and othertwo!=''">
+                othertwo=#{othertwo}
+            </if>
+        </set>
+        where id=#{id}
+    </update>
+
+
+</mapper>

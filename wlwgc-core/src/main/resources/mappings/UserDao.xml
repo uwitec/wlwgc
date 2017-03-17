@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.dao.mapper.UserDao">
+
+    <select id="isLogin" resultType="Login" parameterType="Login">
+        select * from TB_USER tb1 where tb1.username=#{username} and tb1.password=#{password}
+    </select>
+
+    <select id="findUserByUsername" parameterType="User" resultType="java.lang.Integer">
+        SELECT count(*) FROM TB_USER WHERE TB_USER.username=#{username}
+    </select>
+
+    <insert id="insert" parameterType="User">
+        INSERT INTO TB_USER(
+        <trim suffixOverrides=",">
+            <if test="id!=null and id!=''">
+                id,
+            </if>
+            <if test="username!=null and username!=''">
+                username,
+            </if>
+            <if test="realname!=null and realname!=''">
+                realname,
+            </if>
+            <if test="password!=null and password!=''">
+                password,
+            </if>
+
+            <if test="areaid!=null and areaid!=''">
+                areaid,
+            </if>
+            <if test="usertype!=null and usertype!='' or usertype==0">
+                usertype,
+            </if>
+            <if test="other!=null and other!=''">
+                other,
+            </if>
+
+            <if test="createtime!=null and createtime!=''">
+                createtime,
+            </if>
+            <if test="updatetime!=null and updatetime!=''">
+                updatetime
+            </if>
+        </trim>
+        ) VALUES (
+        <trim suffixOverrides=",">
+            <if test="id!=null and id!=''">
+                #{id},
+            </if>
+            <if test="username!=null and username!=''">
+                #{username},
+            </if>
+            <if test="realname!=null and realname!=''">
+                #{realname},
+            </if>
+            <if test="password!=null and password!=''">
+                #{password},
+            </if>
+
+            <if test="areaid!=null and areaid!=''">
+                #{areaid},
+            </if>
+            <if test="usertype!=null and usertype!=''">
+                #{usertype},
+            </if>
+            <if test="other!=null and other!=''">
+                #{other},
+            </if>
+
+
+            <if test="createtime!=null and createtime!=''">
+                #{createtime},
+            </if>
+            <if test="updatetime!=null and updatetime!=''">
+                #{updatetime}
+            </if>
+
+        </trim>
+        )
+    </insert>
+
+
+    <select id="findByPage" resultType="User" parameterType="com.dao.base.data.Page">
+        ${datasql}
+    </select>
+
+    <select id="getTotal" resultType="java.lang.Long" parameterType="com.dao.base.data.Page">
+        ${totalsql}
+    </select>
+    <select id="findById" resultType="User" parameterType="User">
+      SELECT * FROM TB_USER  TB1 WHERE TB1.ID=#{id}
+    </select>
+
+</mapper>

@@ -1,0 +1,44 @@
+.dao-wrap {
+    display: block;
+
+    width: 550px;
+    height: 450px;
+    margin: auto;
+    margin-top: -500px;
+    border-radius: 15px;
+    /*background-color: #27408B;*/
+    color: #FFFFFF;
+    opacity: 0.75;
+}
+.dao-btn {
+    width: 60px;
+    line-height: 35px;
+    border-radius: 15px;
+    border: 1px solid blue;
+    text-align: center;
+    margin-right: 50px;
+    margin-left: 50px;
+    color: #FFFFFF;
+    cursor: pointer;
+    background-color: #2F4F4F;
+    transition: 0.5s ease-out;
+    -moz-transition: 0.5s ease-out;
+    -webkit-transition: 0.5s ease-out;
+}
+
+.dao-btn:hover {
+    background-color: #000000;
+    cursor: hand;
+    transform: scale(0.85);
+    -ms-transform: scale(0.85);
+    -moz-transform: scale(0.85);
+    -webkit-transform: scale(0.85);
+
+}
+
+div#register {
+    float: right;
+    color: #F8ACF1;
+    cursor: pointer;
+    margin-right: 50px;
+}

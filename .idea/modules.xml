@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/wlwgc.iml" filepath="$PROJECT_DIR$/wlwgc.iml" />
+      <module fileurl="file://$PROJECT_DIR$/wlwgc-base/wlwgc-base.iml" filepath="$PROJECT_DIR$/wlwgc-base/wlwgc-base.iml" />
+      <module fileurl="file://$PROJECT_DIR$/wlwgc-core/wlwgc-core.iml" filepath="$PROJECT_DIR$/wlwgc-core/wlwgc-core.iml" />
+      <module fileurl="file://$PROJECT_DIR$/wlwgc-interface/wlwgc-interface.iml" filepath="$PROJECT_DIR$/wlwgc-interface/wlwgc-interface.iml" />
+      <module fileurl="file://$PROJECT_DIR$/wlwgc-service/wlwgc-service.iml" filepath="$PROJECT_DIR$/wlwgc-service/wlwgc-service.iml" />
+      <module fileurl="file://$PROJECT_DIR$/wlwgc-util/wlwgc-util.iml" filepath="$PROJECT_DIR$/wlwgc-util/wlwgc-util.iml" />
+      <module fileurl="file://$PROJECT_DIR$/wlwgc-web/wlwgc-web.iml" filepath="$PROJECT_DIR$/wlwgc-web/wlwgc-web.iml" />
+    </modules>
+  </component>
+</project>

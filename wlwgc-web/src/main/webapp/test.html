@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="resources/plugs/jquery.min.js" type="text/javascript" charset="utf-8"></script>
+    <script src="resources/plugs/bootstrap/js/bootstrap.js" type="text/javascript" charset="utf-8"></script>
+    <script type="text/javascript" src="resources/plugs/xcConfirm/js/xcConfirm.js"></script>
+
+    <script src="resources/plugs/jquerySession.js"></script>
+
+
+    <link rel="stylesheet" type="text/css" href="resources/plugs/bootstrap/css/bootstrap-theme.css"/>
+    <link rel="stylesheet" href="resources/plugs/bootstrap/css/bootstrap.css"/>
+    <script src="resources/js/wwjd/dao-page.js"></script>
+    <script src="resources/js/wwjd/dao-kzsz.js"></script>
+    <link rel="stylesheet" href="resources/plugs/xcConfirm/css/xcConfirm.css"/>
+
+
+    <script src="resources/plugs/jquery.cookie.js" type="text/javascript"></script>
+
+
+    <link href="resources/css/login/login.css" rel="stylesheet">
+    <script type="text/javascript">
+        //去除左右两端的空格
+        function trim(str) {
+            if (str == null) {str = "";}
+            return str.replace(/(^\s*)|(\s*$)/g, "");
+        }
+        </script>
+    <meta charset="UTF-8">
+
+
+    <script type="text/javascript">
+        $(function () {
+
+$('body').find('#applyName').css({
+    'width':'120px'
+});
+            $('#applyName').parents('body').css({'background':'#FFF000'});
+
+
+
+        })
+    </script>
+
+<style type="text/css">
+
+</style>
+
+</head>
+<body>
+<label for="applyName" class="control-label">姓名</label>
+<input name="applyName" id="applyName" class="dao-name form-control" />
+
+</body>
+</html>

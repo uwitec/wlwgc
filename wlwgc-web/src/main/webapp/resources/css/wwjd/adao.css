@@ -1,0 +1,200 @@
+.dao-btn {
+    width: 60px;
+    line-height: 35px;
+    border-radius: 15px;
+    border: 1px solid blue;
+    text-align: center;
+    margin-right: 50px;
+    margin-left: 50px;
+    color: #FFFFFF;
+    cursor: pointer;
+    background-color: #2F4F4F;
+    transition: 0.5s ease-out;
+    -moz-transition: 0.5s ease-out;
+    -webkit-transition: 0.5s ease-out;
+}
+
+.dao-btn:hover {
+    background-color: #000000;
+    cursor: hand;
+    transform: scale(0.85);
+    -ms-transform: scale(0.85);
+    -moz-transform: scale(0.85);
+    -webkit-transform: scale(0.85);
+
+}
+
+.dao-btn-pn {
+    width: 60px;
+    line-height: 20px;
+    border-radius: 2px;
+    border: 1px solid blue;
+    text-align: center;
+    margin-right: 2px;
+    margin-left: 2px;
+    color: #FFFFFF;
+    cursor: pointer;
+    background-color: #2F4F4F;
+    transition: 0.5s ease-out;
+    -moz-transition: 0.5s ease-out;
+    -webkit-transition: 0.5s ease-out;
+}
+
+.dao-btn-pn:hover {
+    background-color: #000000;
+    cursor: hand;
+    transform: scale(0.85);
+    -ms-transform: scale(0.85);
+    -moz-transform: scale(0.85);
+    -webkit-transform: scale(0.85);
+
+}
+
+#keyword {
+    background-color: #556B2F;
+    border-radius: 12px;
+    color: #FFFFFF;
+
+}
+
+#keyword:focus {
+    color: #d43f3a;
+
+    transition: border linear .2s, box-shadow linear .5s;
+    background-color: #FFFFFF;
+    -moz-transition: border linear .2s, -moz-box-shadow linear .5s;
+    -webkit-transition: border linear .2s, -webkit-box-shadow linear .5s;
+    outline: none;
+    border-color: rgba(93, 149, 242, .75);
+    box-shadow: 0 0 8px rgba(93, 149, 242, .105);
+    -moz-box-shadow: 0 0 8px rgba(93, 149, 242, .5);
+    -webkit-box-shadow: 0 0 8px rgba(93, 149, 242, 3);
+}
+
+.dao-hide {
+    display: none;
+}
+
+.dao-left {
+    float: left;
+}
+
+.dao-right {
+    float: right;
+}
+
+.dao-clear {
+    clear: both;
+}
+
+.manage-menu {
+    background-color: #2F4F4F;
+    color: #FFFEFA;
+    margin: auto;
+    font-size: 18px;
+    height: 60px;
+}
+.dao-menu-bg img{
+    height: 200px;
+    width: 1350px;
+
+}
+.dao-menu-bg{
+    margin: auto;
+    /*position: absolute;*/
+    width: 1350px;
+}
+
+.dao-menu {
+    text-align: center;
+    background-color: transparent;
+    z-index: 999;
+    background-color: #2F4F4F;
+    color: #FFFFFF;
+    height: 60px;
+    width: 1350px;
+    margin: auto;
+    opacity: 0.8;
+    border-right:1px dashed #3a0b33 ;
+    transition: 0.4s ease-out;
+    -moz-transition: 0.4s ease-out;
+    -webkit-transition: 0.4s ease-out;
+}
+
+.dao-menu div {
+    line-height: 60px;
+}
+
+.dao-menu .dao-left {
+    color: #ff0000;
+    cursor: pointer;
+    margin-left: 30px;
+    font-size: 20px;
+    width: 220px;
+}
+.dao-menu .dao-mid span{
+    display: block;
+    width: 130px;
+    cursor: pointer;
+    float: left;
+    font-size: 18px;
+    font-family: 华文新魏;
+}
+
+.dao-menu div.dao-left:hover,.dao-menu .dao-mid span:hover,#noticy:hover,#userset span:hover{
+    background: #000000;
+    color: #00FF00;
+}
+
+#usermsg:hover{
+    background: #616161;
+    color: #00a200;
+}
+
+#usermsg{
+    float: right;
+    margin-right: 10px;
+    width:150px;
+    font-family: 华文新魏;
+    font-size: 18px;
+
+}
+
+.clickmenu {
+    background: #D1EEEE;
+    color: #1C1C1C;
+}
+
+#userset{
+    background-color: #5a5a5a;
+    height: 120px;
+    position: fixed;
+    display:none;
+}
+#userset span{
+    cursor: pointer;
+    display: block;
+    width:150px;
+}
+
+.dao-shadow {
+    position: fixed;
+    width: 100%;
+    background-color: #A5A5A5;
+    opacity: 0.3;
+    top: 0px;
+    z-index: 100;
+    display: none;
+}
+
+
+.footer {
+    text-align: center;
+    background-color: rgba(242, 246, 251, 0.7);
+    font-family: 华文新魏;
+    color: #000000;
+    margin-top: 50px;
+}
+.footer a {
+    color: #000000;
+}

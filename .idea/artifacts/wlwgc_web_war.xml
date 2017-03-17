@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="wlwgc-web:war">
+    <output-path>$PROJECT_DIR$/wlwgc-web/target</output-path>
+    <root id="archive" name="wlwgc-web-1.0.war">
+      <element id="artifact" artifact-name="wlwgc-web:war exploded" />
+    </root>
+  </artifact>
+</component>

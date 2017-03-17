@@ -1,0 +1,40 @@
+
+.dao-title {
+    display: block;
+    width: 250px;
+    font-size: 25px;
+    margin: 18px auto;
+    padding-top: 20px;
+
+}
+
+.dao-input {
+    display: block;
+    margin: auto;
+    width: 300px;
+}
+div.login label{
+    cursor: pointer;
+}
+
+.dao-yzm {
+    width: 100%;
+    margin-left: 125px;
+}
+
+.dao-input input, .dao-yzm input {
+    background-color: #0D3349;
+    border-radius: 8px;
+    line-height: 25px;
+    text-align: center;
+    margin-top: 25px;
+}
+
+.dao-btn.go {
+    display: block;
+    margin: 30px auto;
+    width: 100px;
+    line-height: 100px;
+    border-radius: 50%;
+
+}

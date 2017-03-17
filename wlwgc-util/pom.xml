@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <parent>
+        <artifactId>wlwgc</artifactId>
+        <groupId>com.dao</groupId>
+        <version>1.0</version>
+    </parent>
+    <modelVersion>4.0.0</modelVersion>
+
+    <artifactId>wlwgc-util</artifactId>
+    <packaging>jar</packaging>
+
+    <properties>
+        <wlwgc-core.version>1.0</wlwgc-core.version>
+        <commons-lang.version>2.6</commons-lang.version>
+    </properties>
+
+
+    <dependencies>
+        <dependency>
+            <groupId>com.dao</groupId>
+            <artifactId>wlwgc-core</artifactId>
+            <version>${wlwgc-core.version}</version>
+        </dependency>
+
+        <!-- https://mvnrepository.com/artifact/commons-lang/commons-lang -->
+        <dependency>
+            <groupId>commons-lang</groupId>
+            <artifactId>commons-lang</artifactId>
+            <version>${commons-lang.version}</version>
+        </dependency>
+
+    </dependencies>
+
+</project>

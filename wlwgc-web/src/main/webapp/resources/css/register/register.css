@@ -1,0 +1,29 @@
+#wwjd-register{
+    width:800px;
+    margin: auto;
+    margin-top: 80px;
+}
+#register_content {
+    opacity: 0.7;
+    background: #3a0b33;
+}
+
+.form-group label {
+    color: #13030d;
+}
+
+.song_font {
+    color: #32ad9e;
+}
+
+.col-md-8 {
+    padding: 50px;
+}
+
+.flag-img-box {
+    line-height: 35px;
+}
+
+.flag-img-box img {
+    vertical-align: middle;
+}
